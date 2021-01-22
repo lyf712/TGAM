@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyf.dao.mapper.RecordDataTableMapper">
+
+    <update id="deleteTable">
+        DROP table ${tableName}
+    </update>
+
+
+    <update id="createTable">
+        CREATE TABLE ${newTableName}(
+    id        int auto_increment
+        primary key,
+    info_id   varchar(100) null,
+    index_data varchar(50) null,
+    timestamp datetime     null,
+    channel_1 float        null,
+    channel_2 float        null,
+    channel_3 float        null,
+    channel_4 float        null,
+    channel_5 float        null,
+    channel_6 float        null,
+    channel_7 float        null,
+    channel_8 float        null
+        )
+    </update>
+</mapper>

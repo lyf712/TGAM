@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyf.dao.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.lyf.dao.domain.User">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+
+        <result column="real_name" jdbcType="VARCHAR" property="realName"/>
+        <result column="age" jdbcType="INTEGER" property="age" />
+        <result column="job" jdbcType="VARCHAR" property="job" />
+        <result column="height" jdbcType="FLOAT" property="height" />
+        <result column="weight" jdbcType="FLOAT" property="weight" />
+        <result column="birthday" jdbcType="DATE" property="birthday" />
+        <result column="id_number" jdbcType="VARCHAR" property="idNumber"/>
+        <result column="head_img" jdbcType="VARCHAR" property="head_img" />
+    </resultMap>
+
+    <!--
+    select :
+    resultType, 具体类型,若解决和数据库字段不一致则采用SQL 中 as解决,springboot可以进行直接设置
+    resultMap: 可以使用映射的,如上resultMap解决不匹配
+    https://blog.csdn.net/leo3070/article/details/77899574/
+    -->
+   <!--用于登录-->
+    <select id="queryByUserName" parameterType="java.lang.String" resultType="com.lyf.dao.domain.User">
+        select
+         id,user_name,password,real_name,age,job,
+        height,weight,birthday,id_number,head_img
+        from user where user_name = #{userName}
+    </select>
+
+
+    <select id="queryAll" resultType="com.lyf.dao.domain.User">
+        SELECT * from user
+    </select>
+
+    <select id="queryByUserId" resultType="com.lyf.dao.domain.User">
+        select
+        id,user_name,password,real_name,age,job,
+        height,weight,birthday,id_number,head_img
+        from user where id = #{id}
+    </select>
+
+    <!--parameterType只能一个,若需要多个,只能封装成一个类-->
+    <insert id="insertOne" parameterType="com.lyf.dao.domain.User">
+        INSERT INTO user
+        VALUES(null,#{userName},#{password},#{realName},#{age},#{job},#{height},
+        #{weight},#{birthday},#{idNumber},#{headImg})
+    </insert>
+
+
+    <!--通过ID删除用户-->
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        DELETE FROM user WHERE id = #{id}
+    </delete>
+
+
+
+    <!--通过ID删除用户-->
+    <delete id="deleteByUserName" parameterType="java.lang.String">
+        DELETE FROM user WHERE user_name = #{userName}
+    </delete>
+
+    <update id="updateUserInfo" parameterType="com.lyf.dao.domain.User">
+       UPDATE user
+       <set>
+           <if test="userName !=null">
+              user_name=#{userName},
+           </if>
+           <if test="password !=null">
+               password=#{password},
+           </if>
+           <if test="job !=null">
+               job=#{job},
+           </if>
+           <if test="age !=null">
+               age=#{age},
+           </if>
+           <if test="height !=null">
+               height=#{height},
+           </if>
+           <if test="weight !=null">
+               weight=#{weight},
+           </if>
+           <if test="birthday !=null">
+               birthday=#{birthday},
+           </if>
+           <if test="headImg !=null">
+               head_img=#{headImg},
+           </if>
+       </set>
+      WHERE user_name = #{userName}
+    </update>
+
+
+
+
+</mapper>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lyf.dao.mapper.RecordDataMapper">
+
+    <resultMap id="BaseResultMap" type="com.lyf.dao.domain.RecordData">
+        <result column="id" jdbcType="INTEGER" property="id" />
+      <!--  <result column="record_id" jdbcType="INTEGER" property="recordId" />-->
+        <result column="info_id" jdbcType="VARCHAR" property="infoId" />
+        <result column="data_index" jdbcType="VARCHAR" property="dataIndex"/>
+
+        <result column="channel_1" jdbcType="FLOAT" property="channel1" />
+        <result column="channel_2" jdbcType="FLOAT" property="channel2" />
+        <result column="channel_3" jdbcType="FLOAT" property="channel3" />
+        <result column="channel_4" jdbcType="FLOAT" property="channel4" />
+        <result column="channel_5" jdbcType="FLOAT" property="channel5" />
+        <result column="channel_6" jdbcType="FLOAT" property="channel6" />
+        <result column="channel_7" jdbcType="FLOAT" property="channel7" />
+        <result column="channel_8" jdbcType="FLOAT" property="channel8" />
+    </resultMap>
+    <!--
+    select :
+    resultType, 具体类型,若解决和数据库字段不一致则采用SQL 中 as解决,springboot可以进行直接设置
+    resultMap: 可以使用映射的,如上resultMap解决不匹配
+    https://blog.csdn.net/leo3070/article/details/77899574/
+    -->
+
+    <!--parameterType只能一个,若需要多个,只能封装成一个类-->
+    <insert id="insertOneRecord" parameterType="com.lyf.dao.domain.RecordData">
+        INSERT INTO record_data2
+        VALUES(null,#{infoId},#{dataIndex},#{timestamp},#{channel1},#{channel2},#{channel3},
+        #{channel4},#{channel5},#{channel6},#{channel7},#{channel8})
+    </insert>
+
+    
+    <insert id="insertBatchRecordData" parameterType="java.util.List">
+        INSERT record_data2 VALUES
+        <foreach collection="list" item="recordData" index="index" separator=",">
+            (
+            null ,
+            #{recordData.infoId},
+            #{recordData.dataIndex},
+            #{recordData.timestamp},
+            #{recordData.channel1},
+            #{recordData.channel2},
+            #{recordData.channel3},
+            #{recordData.channel4},
+            #{recordData.channel5},
+            #{recordData.channel6},
+            #{recordData.channel7},
+            #{recordData.channel8}
+            )
+        </foreach>
+    </insert>
+
+
+    <select id="getRecordData" parameterType="java.lang.String" resultType="com.lyf.dao.domain.RecordData">
+        SELECT * FROM record_data2 WHERE info_id = #{infoId}
+    </select>
+<!--    <select id="selectIndex" parameterType="java.lang.Integer">-->
+<!--        SELECT max(index) FROM record-->
+<!--    </select>-->
+
+
+
+    <select id="getRecordByDate" parameterType="java.lang.String" resultType="com.lyf.dao.domain.RecordData">
+        SELECT * FROM record_data2 WHERE
+        info_id like #{infoId}
+    </select>
+
+
+
+
+</mapper>

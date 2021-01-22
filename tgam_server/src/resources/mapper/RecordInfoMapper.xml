@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyf.dao.mapper.RecordInfoMapper">
+
+    <resultMap id="RecordInfoMap" type="com.lyf.dao.domain.RecordInfo">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="info_id" jdbcType="VARCHAR" property="infoId"/>
+        <result column="start_time" jdbcType="TIMESTAMP" property="startTime"/>
+        <result column="end_time" jdbcType="TIMESTAMP" property="endTime"/>
+        <result column="model" jdbcType="VARCHAR" property="model"/>
+        <result column="device" jdbcType="VARCHAR" property="device"/>
+    </resultMap>
+
+    <insert id="insertRecordInfo" parameterType="com.lyf.dao.domain.RecordInfo">
+        INSERT INTO record_info VALUES (#{id},#{infoId},#{startTime},#{endTime},#{totalTime},#{model},#{device})
+    </insert>
+
+    <select id="getRecordInfo" parameterType="java.lang.String" resultType="com.lyf.dao.domain.RecordInfo">
+        SELECT * FROM record_info WHERE info_id = #{infoId}
+    </select>
+
+    <select id="getRecordInfoByDate" parameterType="java.lang.String" resultType="com.lyf.dao.domain.RecordInfo">
+        SELECT * FROM record_info WHERE
+        info_id like #{infoId}
+    </select>
+
+</mapper>

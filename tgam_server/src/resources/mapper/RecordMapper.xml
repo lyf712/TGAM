@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lyf.dao.mapper.RecordMapper">
+
+
+<!--若不写resultMap    A query was run and no Result Maps were found for the Mapped Statement 'c-->
+
+    <resultMap id="RecordMap" type="com.lyf.dao.domain.Record">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="info_id" jdbcType="VARCHAR" property="infoId"/>
+        <result column="index" jdbcType="INTEGER" property="index"/>
+        <result column="timestamp" jdbcType="TIMESTAMP" property="timeStamp"/>
+    </resultMap>
+
+<!--  关于时间  https://www.cnblogs.com/xzjf/p/7600533.html-->
+
+    <select id="selectAll" parameterType="java.lang.Integer" resultType="com.lyf.dao.domain.Record">
+        SELECT * FROM record WHERE date(`timestamp`)=curdate() and user_id = #{userId}
+    </select>
+
+
+    <!--勿在语句中写注释,否则报错2 > number of parameters,
+    参考文章：https://blog.csdn.net/change987654321/article/details/108004233
+    -->
+
+    <select id="selectIndex" parameterType="java.lang.Integer" resultType="int">
+         SELECT count(*) FROM record WHERE date(`timestamp`)=curdate() and user_id = #{userId}
+    </select>
+
+<!--    queryIndexByName-->
+
+    <select id="queryIndexByName" parameterType="java.lang.String" resultType="int">
+         SELECT count(*) FROM record WHERE date(`timestamp`)=curdate() and user_name = #{userName}
+    </select>
+
+
+    <insert id="insertRecord" parameterType="com.lyf.dao.domain.Record">
+        INSERT INTO record VALUES (#{id},#{userName},#{infoId},#{index},#{timeStamp})
+    </insert>
+
+</mapper>

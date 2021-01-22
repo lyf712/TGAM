@@ -1,0 +1,129 @@
+2020-12-29 16:41:02.468  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : Starting DemoApplication v0.0.1-SNAPSHOT using Java 15 on 674619459deMacBook-Pro.local with PID 59381 (/Library/apache-tomcat-8.5.60/webapps/tgam/WEB-INF/classes started by a674619459 in /Library/apache-tomcat-8.5.60/bin)
+2020-12-29 16:41:02.512  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : No active profile set, falling back to default profiles: default
+2020-12-29 16:41:05.076  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-29 16:41:05.091  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-29 16:41:05.182  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2020-12-29 16:41:06.166  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3564 ms
+2020-12-29 16:41:08.211  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'threadPoolTaskScheduler'
+2020-12-29 16:41:11.020  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2020-12-29 16:41:11.222  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1856158f:0/SimpleConnection@440f62f8 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58521]
+2020-12-29 16:41:11.318  INFO 59381 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : Started DemoApplication in 10.091 seconds (JVM running for 19.96)
+2020-12-29 16:41:11.673  INFO 59381 --- [http-nio-8086-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-29 16:41:11.677  INFO 59381 --- [http-nio-8086-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2020-12-29 16:41:53.663  INFO 59381 --- [http-nio-8086-exec-10] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-29 16:41:55.308  INFO 59381 --- [http-nio-8086-exec-10] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-29 16:41:55.467  INFO 59381 --- [http-nio-8086-exec-10] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:83
+2020-12-29 16:42:37.138  INFO 59381 --- [http-nio-8086-exec-5] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:84
+2020-12-29 16:42:38.246  INFO 59381 --- [http-nio-8086-exec-6] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:84
+2020-12-29 16:42:38.934  INFO 59381 --- [http-nio-8086-exec-7] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:84
+2020-12-29 16:42:39.697  INFO 59381 --- [http-nio-8086-exec-8] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:84
+2020-12-29 16:42:40.418  INFO 59381 --- [http-nio-8086-exec-9] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:84
+2020-12-29 16:46:26.370  INFO 59381 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-12-29 16:46:27.300  INFO 59381 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-12-29 16:46:27.301  INFO 59381 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-12-29 16:46:28.300  INFO 59381 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-12-29 16:46:28.304  INFO 59381 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-12-29 16:46:28.305  INFO 59381 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-12-29 16:46:28.310  INFO 59381 --- [localhost-startStop-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'threadPoolTaskScheduler'
+2020-12-29 16:46:28.435  INFO 59381 --- [localhost-startStop-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-29 16:46:28.440  INFO 59381 --- [localhost-startStop-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-29 16:46:51.257  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : Starting DemoApplication v0.0.1-SNAPSHOT using Java 15 on 674619459deMacBook-Pro.local with PID 60473 (/Library/apache-tomcat-8.5.60/webapps/tgam/WEB-INF/classes started by a674619459 in /Library/apache-tomcat-8.5.60/bin)
+2020-12-29 16:46:51.300  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : No active profile set, falling back to default profiles: default
+2020-12-29 16:46:53.394  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-29 16:46:53.400  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-29 16:46:53.459  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+2020-12-29 16:46:54.370  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2950 ms
+2020-12-29 16:46:56.294  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'threadPoolTaskScheduler'
+2020-12-29 16:46:58.306  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2020-12-29 16:46:58.507  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#3c2f7159:0/SimpleConnection@952ac80 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58974]
+2020-12-29 16:46:58.616  INFO 60473 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : Started DemoApplication in 8.535 seconds (JVM running for 18.505)
+2020-12-29 16:46:59.149  INFO 60473 --- [http-nio-8086-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-29 16:46:59.150  INFO 60473 --- [http-nio-8086-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2020-12-29 16:47:09.607  INFO 60473 --- [http-nio-8086-exec-9] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-29 16:47:11.101  INFO 60473 --- [http-nio-8086-exec-9] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-29 16:47:11.250  INFO 60473 --- [http-nio-8086-exec-9] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:85
+2020-12-29 16:47:20.331  INFO 60473 --- [http-nio-8086-exec-1] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:85
+2020-12-29 16:47:21.201  INFO 60473 --- [http-nio-8086-exec-3] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:85
+2020-12-29 16:47:22.402  INFO 60473 --- [http-nio-8086-exec-4] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:85
+2020-12-29 16:47:22.972  INFO 60473 --- [http-nio-8086-exec-5] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:85
+2020-12-29 16:47:23.562  INFO 60473 --- [http-nio-8086-exec-6] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:85
+2020-12-29 16:47:24.041  INFO 60473 --- [http-nio-8086-exec-7] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:85
+2020-12-29 16:47:25.052  INFO 60473 --- [http-nio-8086-exec-8] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:85
+2020-12-29 16:47:31.920  INFO 60473 --- [http-nio-8086-exec-9] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:85data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:47:35.653  INFO 60473 --- [http-nio-8086-exec-10] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:85data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:47:37.800  INFO 60473 --- [http-nio-8086-exec-2] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:85data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:47:39.471  INFO 60473 --- [http-nio-8086-exec-1] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:85data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:47:43.939  INFO 60473 --- [http-nio-8086-exec-3] c.l.c.RecordController                   : 结束记录数据:记录key为Tom22:2020-12-29:85data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:50:05.769  INFO 60473 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-12-29 16:50:06.213  INFO 60473 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-12-29 16:50:06.214  INFO 60473 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-12-29 16:50:07.214  INFO 60473 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-12-29 16:50:07.218  INFO 60473 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-12-29 16:50:07.218  INFO 60473 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-12-29 16:50:07.224  INFO 60473 --- [localhost-startStop-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'threadPoolTaskScheduler'
+2020-12-29 16:50:07.351  INFO 60473 --- [localhost-startStop-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-29 16:50:07.356  INFO 60473 --- [localhost-startStop-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-29 16:50:29.191  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : Starting DemoApplication v0.0.1-SNAPSHOT using Java 15 on 674619459deMacBook-Pro.local with PID 61159 (/Library/apache-tomcat-8.5.60/webapps/tgam/WEB-INF/classes started by a674619459 in /Library/apache-tomcat-8.5.60/bin)
+2020-12-29 16:50:29.207  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : No active profile set, falling back to default profiles: default
+2020-12-29 16:50:30.693  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-29 16:50:30.698  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-29 16:50:30.765  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+2020-12-29 16:50:31.604  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2350 ms
+2020-12-29 16:50:33.651  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'threadPoolTaskScheduler'
+2020-12-29 16:50:36.332  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2020-12-29 16:50:36.592  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7d91bd82:0/SimpleConnection@5f957ad9 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59260]
+2020-12-29 16:50:36.718  INFO 61159 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : Started DemoApplication in 8.425 seconds (JVM running for 16.104)
+2020-12-29 16:50:37.129  INFO 61159 --- [http-nio-8086-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-29 16:50:37.131  INFO 61159 --- [http-nio-8086-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2020-12-29 16:50:46.885  INFO 61159 --- [http-nio-8086-exec-8] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-29 16:50:48.333  INFO 61159 --- [http-nio-8086-exec-8] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-29 16:50:48.511  INFO 61159 --- [http-nio-8086-exec-8] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:86
+2020-12-29 16:50:50.332  INFO 61159 --- [http-nio-8086-exec-9] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:86
+2020-12-29 16:50:51.402  INFO 61159 --- [http-nio-8086-exec-10] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:86
+2020-12-29 16:50:51.927  INFO 61159 --- [http-nio-8086-exec-1] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:86
+2020-12-29 16:50:52.398  INFO 61159 --- [http-nio-8086-exec-2] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:86
+2020-12-29 16:50:52.920  INFO 61159 --- [http-nio-8086-exec-3] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:86
+2020-12-29 16:50:53.407  INFO 61159 --- [http-nio-8086-exec-4] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:86
+2020-12-29 16:50:53.837  INFO 61159 --- [http-nio-8086-exec-5] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:86
+2020-12-29 16:51:00.182  INFO 61159 --- [http-nio-8086-exec-8] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:86data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:51:03.843  INFO 61159 --- [http-nio-8086-exec-9] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:86data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:51:05.119  INFO 61159 --- [http-nio-8086-exec-10] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:86data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:51:09.337  INFO 61159 --- [http-nio-8086-exec-1] c.l.c.RecordController                   : 结束记录数据:记录key为Tom22:2020-12-29:86data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:52:55.955  INFO 61159 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-12-29 16:52:56.132  INFO 61159 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-12-29 16:52:56.133  INFO 61159 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-12-29 16:52:57.132  INFO 61159 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-12-29 16:52:57.135  INFO 61159 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-12-29 16:52:57.136  INFO 61159 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-12-29 16:52:57.142  INFO 61159 --- [localhost-startStop-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'threadPoolTaskScheduler'
+2020-12-29 16:52:57.270  INFO 61159 --- [localhost-startStop-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-29 16:52:57.275  INFO 61159 --- [localhost-startStop-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2020-12-29 16:53:17.150  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : Starting DemoApplication v0.0.1-SNAPSHOT using Java 15 on 674619459deMacBook-Pro.local with PID 61687 (/Library/apache-tomcat-8.5.60/webapps/tgam/WEB-INF/classes started by a674619459 in /Library/apache-tomcat-8.5.60/bin)
+2020-12-29 16:53:17.169  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : No active profile set, falling back to default profiles: default
+2020-12-29 16:53:18.952  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-29 16:53:18.961  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-29 16:53:19.052  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+2020-12-29 16:53:20.093  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2852 ms
+2020-12-29 16:53:21.995  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'threadPoolTaskScheduler'
+2020-12-29 16:53:24.142  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2020-12-29 16:53:24.356  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5e8ea76f:0/SimpleConnection@51eed99 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59486]
+2020-12-29 16:53:24.477  INFO 61687 --- [RMI TCP Connection(2)-127.0.0.1] c.l.DemoApplication                      : Started DemoApplication in 8.233 seconds (JVM running for 17.427)
+2020-12-29 16:53:24.668  INFO 61687 --- [http-nio-8086-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-12-29 16:53:24.671  INFO 61687 --- [http-nio-8086-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2020-12-29 16:56:21.366  INFO 61687 --- [http-nio-8086-exec-10] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-12-29 16:56:22.887  INFO 61687 --- [http-nio-8086-exec-10] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-12-29 16:56:23.040  INFO 61687 --- [http-nio-8086-exec-10] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:87
+2020-12-29 16:56:27.308  INFO 61687 --- [http-nio-8086-exec-1] c.l.c.RecordController                   : 开始记录数据:记录key为Tom22:2020-12-29:87
+2020-12-29 16:56:32.094  INFO 61687 --- [http-nio-8086-exec-2] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:87data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:56:34.904  INFO 61687 --- [http-nio-8086-exec-3] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:87data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:56:37.360  INFO 61687 --- [http-nio-8086-exec-4] c.l.c.RecordController                   : 记录数据:记录key为Tom22:2020-12-29:87data为[2,2,1,2,3,1,2,2]
+2020-12-29 16:56:43.868  INFO 61687 --- [http-nio-8086-exec-5] c.l.c.RecordController                   : 结束记录数据:记录key为Tom22:2020-12-29:87data为[2,2,1,2,3,1,2,2]
+2020-12-29 17:00:02.751  INFO 61687 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-12-29 17:00:03.717  INFO 61687 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-12-29 17:00:03.719  INFO 61687 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-12-29 17:00:03.768  INFO 61687 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-12-29 17:00:03.772  INFO 61687 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-12-29 17:00:03.773  INFO 61687 --- [localhost-startStop-2] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-12-29 17:00:03.786  INFO 61687 --- [localhost-startStop-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'threadPoolTaskScheduler'
+2020-12-29 17:00:03.918  INFO 61687 --- [localhost-startStop-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2020-12-29 17:00:03.933  INFO 61687 --- [localhost-startStop-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

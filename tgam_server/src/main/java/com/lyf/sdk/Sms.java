@@ -41,7 +41,7 @@ public class Sms {
 
     public static void main(String[] args){
 
-//        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4G1Bf13hqBWjnGYysjSx", "HmAr7ahojks3vr0hpAdh0Ne4y4Sohf");
+//        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "***", "***");
 //        IAcsClient client = new DefaultAcsClient(profile);
 //        CommonRequest request = new CommonRequest();
 //        request.setSysMethod(MethodType.POST);
@@ -74,7 +74,7 @@ public class Sms {
 
         System.out.println("Sms开始发送短信2："+code);
 
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4G1Bf13hqBWjnGYysjSx", "HmAr7ahojks3vr0hpAdh0Ne4y4Sohf");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "***", "***");
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();
